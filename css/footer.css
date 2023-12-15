@@ -1,0 +1,56 @@
+footer nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+footer nav div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+footer nav {
+    border-top: 1px var(--color-border) solid;
+}
+
+footer nav a {
+    padding: 0.5rem 1rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+
+    background-color: var(--color-page);
+
+    color: var(--color-link-text);
+
+    transition: background-color 0.2s ease-out, color 0.2s ease-out;
+}
+
+footer nav a:hover {
+    background-color: var(--color-link-light);
+
+    color: var(--color-icon-light);
+}
+
+footer nav p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: var(--color-link-text);
+}
+
+footer nav a svg {
+    height: 1.2rem;
+    width: 1.2rem;
+}
+
+footer nav p.pad {
+    padding: 0.5rem 1rem;
+}

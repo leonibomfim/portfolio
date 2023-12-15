@@ -1,0 +1,51 @@
+header nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav {
+    border-bottom: 1px var(--color-border) solid;
+}
+
+header nav div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+header nav a {
+    padding: 0.5rem 1rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--color-page);
+
+    color: var(--color-link-text);
+
+    border-bottom: 2px transparent solid;
+
+    transition: background-color 0.2s ease-out, color 0.2s ease-out, border-color 0.2s ease-out;
+}
+
+header nav a:hover {
+    background-color: var(--color-link-light);
+
+    color: var(--color-white);
+}
+
+header nav a.profile {
+    width: 18.5rem;
+
+    justify-content: left;
+}
+
+header nav a.active {
+    color: var(--color-white);
+
+    border-bottom-color: var(--color-link-active);
+}

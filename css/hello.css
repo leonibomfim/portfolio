@@ -1,0 +1,115 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+    padding-left: 10rem;
+}
+
+main p.hi {
+    color: var(--color-white);
+
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+main p.name {
+    color: var(--color-white);
+
+    font-size: 4rem;
+    font-weight: 400;
+}
+
+main p.stack {
+    color: var(--color-hello-blue);
+
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+main p.code {
+    color: var(--color-hello-gray);
+
+    font-size: 0.75rem;
+    font-weight: 400;
+    font-family: 'DM Sans', monospace;
+
+    margin-top: 3rem;
+}
+
+main div {
+    color: var(--color-white);
+
+    font-size: 0.75rem;
+    font-weight: 400;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+
+}
+
+main div p.blue {
+    color: var(--color-hello-blue);
+
+}
+
+main div p.green {
+    color: var(--color-hello-green);
+}
+
+main div p.white {
+    color: var(--color-white);
+}
+
+main div p.orange {
+    color: var(--color-hello-orange);
+}
+
+
+main div.blurry-green {
+    border-radius: 100% 0 0;
+    filter: blur(100px);
+    height: 400px;
+    opacity: 0.5;
+    position: fixed;
+    right: 35%;
+    rotate: 20deg;
+    top: 10%;
+    width: 400px;
+    background: radial-gradient(circle at 50% 50%, #43d9ad, rgba(76, 0, 255, 0));
+    animation: pulse 5s infinite;
+}
+
+main div.blurry-blue {
+    border-radius: 100% 50% 100% 0;
+    bottom: 10%;
+    height: 500px;
+    opacity: 0.7;
+    position: fixed;
+    right: 10%;
+    width: 500px;
+    filter: blur(45px);
+    z-index: 10;
+    rotate: 10deg;
+    background: radial-gradient(circle at 50% 50%, #4d5bce, rgba(76, 0, 255, 0));
+    animation: pulse 5s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(0.75);
+    }
+
+    50% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(0.75);
+    }
+}

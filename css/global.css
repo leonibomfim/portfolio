@@ -1,0 +1,136 @@
+html {
+  --color-white: #ffffff;
+  --color-black: #000000;
+
+  --color-background: #010C15;
+  --color-border: #1e2d3d;
+
+  --color-page: #011627;
+
+  --color-link-text: #607B96;
+  --color-link-light: #0F2031;
+  --color-link-active: #fea55f;
+
+  --color-icon-light: #607B96;
+
+  --color-hello-blue: #4d5bce;
+  --color-hello-blue-light: #5e6ef2;
+  --color-hello-gray: #607b96;
+  --color-hello-green: #43d9ad;
+  --color-hello-orange: #e99287;
+  --color-background-code: #011221;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+
+  @media screen and (max-width: 600px) {
+    font-size: 67.75%;
+  }
+
+  @media screen and (min-width: 576px) {
+    font-size: 74.25%;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 80.75%;
+  }
+
+  @media screen and (min-width: 992px) {
+    font-size: 87.25%;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 93.75%;
+  }
+
+
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+
+  text-rendering: optimizelegibility !important;
+  -webkit-font-smoothing: antialiased !important;
+  scroll-behavior: smooth;
+
+  background-color: var(--color-background);
+  background-attachment: fixed;
+
+  padding: 1.5rem;
+}
+
+body div#root {
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+
+  background-color: var(--color-page);
+
+  border: 1px solid var(--color-border);
+  border-radius: 0.5rem;
+}
+
+body,
+input,
+textarea,
+button,
+select,
+span,
+p {
+  font-family: 'Fira Code', sans-serif;
+}
+
+button {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  outline: inherit;
+}
+
+input,
+select {
+  border: none;
+  background-image: none;
+  background-color: transparent;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+a {
+  background: none;
+  color: inherit;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+.b-left {
+  border-left: 1px var(--color-border) solid;
+}
+
+.b-right {
+  border-right: 1px var(--color-border) solid;
+}
+
+.b-bottom {
+  border-bottom: 1px var(--color-border) solid;
+}
