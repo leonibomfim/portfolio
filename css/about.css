@@ -61,6 +61,12 @@ main section.folders div.folder main svg.arrow {
     color: var(--color-link-text);
     height: 0.9rem;
     width: 0.9rem;
+
+    transition: transform 0.2s ease-out;
+}
+
+main section.folders div.folder main svg.arrow.active {
+    transform: rotate(-90deg);
 }
 
 main section.folders div.folder main svg.folder-blue {
@@ -143,6 +149,14 @@ main section.infos div.info main {
     align-items: flex-start;
     justify-content: flex-start;
     padding: 2rem;
+}
+
+main section.infos div.info main table {
+    display: none;
+}
+
+main section.infos div.info main table.show {
+    display: table;
 }
 
 main section.infos div.info main table tbody tr th {
